@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Brand</h1>
+        </div>
+        <ul>
+            <li><img src="/icons/dashboard.png" alt="">&nbsp;<span>Dashboard</span> </li>
+            <li><img src="/icons/students.png" alt="" width="48px" height="48px">&nbsp;<span>Student</span> </li>
+            <li><img src="/icons/teacher.png" alt="" width="48px" height="48px">&nbsp;<span>Teacher</span> </li>
+            <li><img src="/icons/collage.png" alt="">&nbsp;<span>College</span> </li>
+            <li><img src="/icons/income.png" alt="">&nbsp;<span>Income</span></li>
+            <li><img src="/icons/help.png" alt="">&nbsp;<span>Help</span> </li>
+            <li><img src="/icons/setting.png" alt="">&nbsp;<span>Setting</span> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <form name="myForm"  onsubmit="return searchg()" method="post">
+                        <input type="text" type="text" name="fname" placeholder="Search..">
+                        <!-- <button type="submit"> -->
+                            <img src="/icons/search.png" onclick="searchg()" alt=""></button>
+                    </form>
+                    </div>
+<!-- script for search on google -->
+                <script>
+                    function searchg() {
+                      let x = document.forms["myForm"]["fname"].value;
+                      if (x == "") {
+                        alert("Must be filled");
+                        return false;
+                      }
+                      else{
+
+                        alert("<a href='https://www.google.com/' + x>")
+                      }
+                    }
+                    </script>
+                    
+
+                <div class="user">
+                    <a href="#" class="btn">Add New</a>
+                    <img src="/icons/notifications.png" alt="">
+                    <div class="img-case">
+                        <img src="/icons/user.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>2194</h1>
+                        <h3>Student</h3>
+                    </div>
+                    <div class="icon-case">
+                        <i class="fa-sharp fa-regular fa-graduation-cap"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>53</h1>
+                        <h3>Teachers</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="/icons/teacher.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>5</h1>
+                        <h3>Collage</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="/icons/collage.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>350000</h1>
+                        <h3>Income</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="/icons/income.png" alt="">
+                    </div>
+                </div>
+                </div>
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>Recent Payment</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Collage</th>
+                            <th>Amount</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>Aditya Singh</td>
+                            <td>Babu Banarasi Das University Lucknow</td>
+                            <td>$1593</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Aditya Singh</td>
+                            <td>Babu Banarasi Das University Lucknow</td>
+                            <td>$1593</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Aditya Singh</td>
+                            <td>Babu Banarasi Das University Lucknow</td>
+                            <td>$1593</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Aditya Singh</td>
+                            <td>Babu Banarasi Das University Lucknow</td>
+                            <td>$1593</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Aditya Singh</td>
+                            <td>Babu Banarasi Das University Lucknow</td>
+                            <td>$1593</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Aditya Singh</td>
+                            <td>Babu Banarasi Das University Lucknow</td>
+                            <td>$1593</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Aditya Singh</td>
+                            <td>Babu Banarasi Das University Lucknow</td>
+                            <td>$1593</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="new-students">
+                    <div class="title">
+                        <h2>New Students</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Profile</th>
+                            <th>Name</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td><img src="/icons/user.png" alt=""></td>
+                            <td>Deepak Maseeh</td>
+                            <td><img src="/icons/info.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/icons/user.png" alt=""></td>
+                            <td>Deepak Maseeh</td>
+                            <td><img src="/icons/info.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/icons/user.png" alt=""></td>
+                            <td>Deepak Maseeh</td>
+                            <td><img src="/icons/info.png" alt=""></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
